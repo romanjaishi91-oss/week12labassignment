@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Jaishi - Personal Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="#">
+</head>
+<body>
+
+  <header>
+    <h1 id="main-title">Roman Jaishi's Portfolio</h1>
+    <p>Personal Profile Page with Flexbox Layout</p>
+    <!-- Dark Mode Toggle Button -->
+    <button id="theme-toggle" type="button">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav class="nav-menu" aria-label="Main navigation">
+    <a href="#about">About Me</a>
+    <a href="#profile">Profile</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- Content Wrapper Layout -->
+    <div class="content-wrapper">
+      
+      <section class="card" id="about">
+        <h2>Introduction</h2>
+        <p>Hello! I am Roman Jaishi. I am 20 yrs Old with height 5ft 9inch, I am From Nepal. and I am building my personal portfolio with HTML and CSS.</p>
+        <p>Press F12 to inspect the cards and their spacing in the Computed panel.</p>
+      </section>
+
+      <section class="card" id="profile">
+        <h2>My Profile</h2>
+        <img src="profile.jpg" alt="Roman Jaishi profile photo" class="profile-img">
+        <p><strong>Name:</strong> Roman Jaishi</p>
+        <p><strong>Email:</strong> <a href="mailto:romanjaishi91@gmail.com">romanjaishi91@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:01079213097">01079213097</a></p>
+        <p>I enjoy web engineering, software design, and building responsive websites.</p>
+      </section>
+
+    </div>
+
+    <!-- Step 1: Hobby/Skill List Rendering -->
+    <section class="card" id="hobbies">
+      <h2>My Hobbies &amp; Interests</h2>
+      <div id="hobby-list"></div>
+    </section>
+
+    <!-- Step 2: Hobby Gallery Extension -->
+    <section class="card" id="hobby-gallery">
+      <h2>Hobby Gallery</h2>
+      <img id="gallery-img" src="hobbies.1.jpg" alt="Hobby gallery photo">
+      <button id="next-photo-btn" type="button">Next Photo</button>
+    </section>
+
+    <section id="contact">
+      <h2>Leave a Message</h2>
+      <form>
+        <label for="visitor-name">Name</label>
+        <input id="visitor-name" type="text" placeholder="Your name">
+        <label for="visitor-email">Email</label>
+        <input id="visitor-email" type="email" placeholder="Your email">
+        <label for="visitor-message">Message</label>
+        <textarea id="visitor-message" rows="5" placeholder="Your message"></textarea>
+        <button type="button">Send Message (Layout Demo)</button>
+      </form>
+      <p>This form demonstrates HTML layout; it does not send messages.</p>
+    </section>
+  </main>
+  
+  <footer><p>&copy; 2026 Roman Jaishi | My cumulative web portfolio</p></footer>
+
+  <p><a href="flexbox-simulator.html">Open the supplementary Flexbox simulator</a></p>
+  <script src="script.js"></script>
+</body>
+</html>
